@@ -12,7 +12,6 @@ import org.myas.kafka.utils.PropertiesHelper;
 /**
  * @author Mykhailo Yashchuk
  */
-
 public class AdminTest {
     public static final String BROKERS = System.getProperty("kafka.brokers");
 
