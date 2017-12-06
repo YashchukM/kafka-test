@@ -36,6 +36,8 @@ public class PropertiesHelper {
                 "org.apache.kafka.common.serialization.ByteArrayDeserializer");
         properties.setProperty(ConsumerConfig.CLIENT_ID_CONFIG, clientId);
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, clientId);
+        properties.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
+        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         return properties;
     }
 }
